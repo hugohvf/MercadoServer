@@ -11,6 +11,7 @@ mongoose.connect('mongodb+srv://hugohvf:EdtsmipaYPgtUkkz@cluster0-c53fz.mongodb.
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });
+mongoose.set('useFindAndModify', false);
 
 app.use(express.json());
 app.use(routes);

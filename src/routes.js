@@ -4,6 +4,9 @@ const getDateDelivery = require('./helpers/dateDelivery');
 const OrderController = require('./controllers/OrderController');
 
 routes.post('/order', OrderController.store);
+routes.get('/order', OrderController.index);
+routes.delete('/order', OrderController.deleteOrders);
+routes.put('/order', OrderController.updateOrder);
 
 routes.get('/date', (request, response) => {
     var date = getDateDelivery();
