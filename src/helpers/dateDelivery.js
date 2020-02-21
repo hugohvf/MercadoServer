@@ -1,5 +1,6 @@
 module.exports = function getDateDelivery() {
-    var date = new Date()
+    var d = new Date();
+    var date = new Date(d.valueOf() - d.getTimezoneOffset() * 60000);
     var day = date.getDate();
     var month = date.getMonth() + 1;
     var year = date.getFullYear();
