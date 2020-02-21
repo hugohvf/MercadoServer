@@ -8,9 +8,6 @@ module.exports = function getDateDelivery() {
     var daysMonth = new Date(year, month, 0).getDate();
     var timeDifference = d
 
-    console.log(date);
-    console.log(timeDifference);
-
     switch(daysWeek){
         case 7:
             day = day + 2;
