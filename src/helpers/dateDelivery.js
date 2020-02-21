@@ -1,11 +1,15 @@
 module.exports = function getDateDelivery() {
     var d = new Date();
-    var date = new Date(d.valueOf() - d.getTimezoneOffset() * 60000);
+    var date = new Date(d.valueOf() - 180 * 60000);
     var day = date.getDate();
     var month = date.getMonth() + 1;
     var year = date.getFullYear();
     var daysWeek = date.getDay();
     var daysMonth = new Date(year, month, 0).getDate();
+    var timeDifference = d
+
+    console.log(date);
+    console.log(timeDifference);
 
     switch(daysWeek){
         case 7:
